@@ -1,5 +1,7 @@
 FROM ubuntu:18.04
 
+LABEL maintainer="Jeroen Ketelaar"
+
 RUN apt-get update && \
     apt-get upgrade -y
 
