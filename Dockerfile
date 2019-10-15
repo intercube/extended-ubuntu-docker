@@ -24,6 +24,9 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
+# Adding https support for packages
+RUN apt-get update && apt-get install -y apt-transport-https
+
 # Installing Python3
 RUN apt-get install -y \ 
     python3.7 \
