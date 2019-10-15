@@ -24,6 +24,11 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
+# Installing Python3
+RUN apt-get install -y \ 
+    python3.7 \
+    python3-pip
+
 # Basic tools
 RUN apt-get install -y \
     bash-completion \
