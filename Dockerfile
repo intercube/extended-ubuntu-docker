@@ -60,7 +60,9 @@ RUN apt-get install -y \
     expect
 
 # Python development
-RUN apt-get install -y python-pip
+RUN apt-get install -y \
+    python-pip
+    python3-pip
 
 # C development
 RUN apt-get install -y \
